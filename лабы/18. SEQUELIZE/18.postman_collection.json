@@ -1,0 +1,518 @@
+{
+	"info": {
+		"_postman_id": "04b03961-b66e-4af6-920f-a61c7d06b9ed",
+		"name": "18",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "fac",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/faculties",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"faculties"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fac pulpits",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/pulpits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"pulpits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pulpit",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/pulpits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"pulpits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fac teachers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/teachers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"teachers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "subj",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/subjects",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"subjects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "audit types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/auditoriumstypes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auditoriumstypes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "aud",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auditoriums",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auditoriums"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fac Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"faculty\": \"rut\",\r\n        \"faculty_name\": \"test test345\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/faculties",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"faculties"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pulpit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"pulpit\": \"sleeep\",\r\n        \"pulpit_name\": \"pls\",\r\n        \"faculty\": \"test      \"\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/pulpits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"pulpits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "subj Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"subject\": \"aoa\",\r\n        \"subject_name\": \"test test\",\r\n        \"pulpit\": \"test      \"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/subjects",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"subjects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "audit types Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"auditorium_type\": \"test23\",\r\n        \"auditorium_typename\": \"test\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auditoriumstypes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auditoriumstypes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "aud Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"auditorium\": \"02-434\",\r\n        \"auditorium_name\": \"02Б-4\",\r\n        \"auditorium_capacity\": 90,\r\n        \"auditorium_type\": \"ЛК        \"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auditoriums",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auditoriums"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fac Copy 2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"faculty\": \"rut\",\r\n        \"faculty_name\": \"test test345yt\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/faculties/rut",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"faculties",
+						"rut"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pulpit Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"pulpit\": \"sleeep\",\r\n        \"pulpit_name\": \"plsdd\",\r\n        \"faculty\": \"test      \"\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/pulpits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"pulpits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "subj Copy 2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"subject\": \"aoa\",\r\n        \"subject_name\": \"test test89\",\r\n        \"pulpit\": \"test      \"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/subjects",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"subjects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "audit types Copy 2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"auditorium_type\": \"test23\",\r\n        \"auditorium_typename\": \"testr\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auditoriumstypes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auditoriumstypes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "aud Copy 2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"auditorium\": \"02-434\",\r\n        \"auditorium_name\": \"02Б-4\",\r\n        \"auditorium_capacity\": 905,\r\n        \"auditorium_type\": \"ЛК        \"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auditoriums",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auditoriums"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fac Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/faculties",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"faculties"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "aud scope",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/transact",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"transact"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
