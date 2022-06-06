@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "openssl-nodejs": "^1.0.5",
+    "pem": "^1.14.6"
+  }
+}

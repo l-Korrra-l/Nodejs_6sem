@@ -1,0 +1,18 @@
+--HOSTS: C:\Windows\System32\drivers\etc\hosts
+--CERTIFICATES: certmgr.msc
+--CURL: Remove-item alias:curl, curl -k https://KKV(LAB25-KKV):8443
+
+1. Генерируем приватный ключ удостоверяющего центра CA.key
+a genrsa -des3 -out CA.key 2048
+
+2. Генерируем сертификат для удостоверяющего центра
+a req -x509 -new -days 365 -sha256 -key ./CA.key -sha256 -out ./CA.crt -config ./request_configCA.cfg
+
+3. Генерируем приватный ключ ресурса RECOURSE.key
+b genrsa -des3 -out RECOURSE.key 2048
+
+4. Генерируем сам запрос
+b req -new -key ./RECOURSE.key -out ./RECOURSE.csr -sha256 -config ./request_configRECOURSE.cfg
+
+5. C помощью запроса получаем сертификат для ресурса
+a x509 -req -days 365 -sha256 -in ./RECOURSE.csr -CA ./CA.crt -CAkey ./CA.key -CAcreateserial -out ./RECOURSE.crt -extensions v3_req -extfile ./request_configRECOURSE.cfg
