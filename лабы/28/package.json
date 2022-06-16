@@ -1,7 +1,0 @@
-{
-  "name": "Lab28",
-  "version": "1.0.0",
-  "dependencies": {
-    "jsonrpc-server-http-nats": "^0.1.14"
-  }
-}
