@@ -1,0 +1,27 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="/static/style.css" />
+</head>
+<body>
+  <script src="/static/add.js">
+
+  </script>
+  <div class="viewArea">
+
+    {{#each numbers}}
+      <button disabled="true">
+        {{name}}
+        {{number}}</button>
+      <br />
+
+    {{/each}}
+
+  </div>
+  <div class="buttonArea">
+    <form id="Add">
+      <input type="text" name="name" maxlength="40" />
+      <input type="text" name="number" maxlength="15" />
+    </form>
+    <input type="button" onclick="add()" value="Add" class="buttonAreButton" />
+    {{> cancelButton}}
+  </div>
+</body>

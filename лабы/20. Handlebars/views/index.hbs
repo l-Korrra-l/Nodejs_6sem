@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" type="text/css" href="/static/style.css"/>
+</head>
+<body>
+ 
+  <div class="viewArea">
+
+    {{#each numbers}}
+      <button
+        onclick="window.location.href='update/{{name}}/{{number}}'"
+      >
+        {{name}}
+        {{number}}</button>
+      <br />
+
+    {{/each}}
+
+  </div>
+  <div class="buttonArea">
+    <button onclick="window.location.href='add'" class="buttonAreButton">Add</button>
+  </div>
+</body>

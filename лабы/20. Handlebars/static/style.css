@@ -1,0 +1,52 @@
+/* body{
+  background-color: #B0C4DE;
+} */
+
+.viewArea {
+  padding-top: 20px;
+  height: 400px;
+  overflow:scroll;
+  width: 40%;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.buttonArea {
+  padding-top: 10px;
+  margin: auto;
+  display: block;
+  height: 500px;
+  width: 40%;
+  text-align: center;
+}
+
+button {
+  height: 60px;
+  width: 70%;
+  font-size: 16pt;
+  margin: 3px 2px;
+  display: inline;
+  cursor: pointer;
+  border: 1px solid black
+}
+
+button:hover{
+  border: 2px solid black
+}
+
+.buttonAreButton {
+  height: 30px;
+  width: 100px;
+  font-size: 14pt;
+  margin: 3px 2px;
+  display: inline;
+}
+
+input[type=text] {
+  height: 40px;
+  font-size: 13pt;
+  width: 300px;
+}
+
+

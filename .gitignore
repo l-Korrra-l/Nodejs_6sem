@@ -1,11 +1,2 @@
-лабы/17. REDIS/node_modules/
-лабы/19. EXPRESS_MVC/node_modules/
-лабы/21. Basic, Digest auth/node_modules/
-лабы/23. OAuth/node_modules/
-лабы/24/node_modules/
-лабы/25. Openssl/node_modules/
-лабы/27. WebDav/node_modules/
-лабы/28/node_modules/
-%/node_modules/
-*/node_modules/
-
+**/node_modules/
+**/.env

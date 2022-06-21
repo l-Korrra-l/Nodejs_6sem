@@ -1,0 +1,4 @@
+cd C:\Users\User\Documents\PF\emsdk\emsdk
+emsdk activate latest
+emcc -O3 -o p.wasm -s WASM=1 p.c --no-entry
+C:\Users\User\Documents\Study_6sem\ПСКП\Nodejs_6sem\лабы\29. WASM
